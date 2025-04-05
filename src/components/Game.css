@@ -1,0 +1,154 @@
+body {
+    background: linear-gradient(135deg, #1d2671, #0f0c29);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game {
+    margin-top: 100px;
+}
+
+.game h1 {
+    font-size: 2.8em;
+    margin-bottom: 0.3em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.points span {
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: #00f2ff;
+    color: #000;
+    padding: 0.2em 0.6em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00f2ff;
+}
+
+.tip {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.tip span {
+    color: #00f2ff;
+    font-weight: bold;
+}
+
+.wordContainer {
+    margin: 1.5em auto;
+    padding: 1.5em;
+    border: solid 6px #00f2ff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    animation: pulseBorder 2s infinite;
+}
+
+@keyframes pulseBorder {
+    0% {
+        box-shadow: 0 0 10px #00f2ff;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #c4f4ff;
+    }
+
+    100% {
+        box-shadow: 0 0 10px #00f2ff;
+    }
+}
+
+.letter,
+.blankSquare {
+    font-size: 3em;
+    line-height: 1.5;
+    height: 100px;
+    width: 100px;
+    border: 3px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.letter {
+    background-color: #00e0ff;
+    color: #000;
+}
+
+.blankSquare {
+    background-color: #222;
+    border: 3px dashed #00f2ff;
+    color: transparent;
+}
+
+.letterContainer {
+    margin-top: 2em;
+}
+
+.letterContainer p {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+.letterContainer form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.letterContainer input {
+    height: 60px;
+    width: 60px;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid #00f2ff;
+    box-shadow: 0 0 10px #00f2ff;
+    background-color: #fff;
+    color: #000;
+}
+
+.letterContainer button {
+    background-color: #00f2ff;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0.6em 1.5em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px #00f2ff;
+}
+
+.letterContainer button:hover {
+    background-color: #8cf9ff;
+    transform: scale(1.1);
+}
+
+.wrongLettersContainer {
+    margin-top: 2em;
+}
+
+.wrongLettersContainer p {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.wrongLetter {
+    color: #ff6b6b;
+    font-weight: bold;
+    font-size: 1.2em;
+}
